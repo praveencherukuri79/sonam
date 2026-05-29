@@ -1,6 +1,6 @@
 :root {
   --bg-green: #14752F;
-  --heading: #0B0B0B;
+  --heading: var(--body-readable);
   --body: #F3EEDC;
   --body-readable: #F2E9D2;
   --muted: #D4CCB8;
@@ -37,7 +37,7 @@
   --product-shadow: 0 18px 42px rgb(24 34 24 / 0.1);
   --button-shadow: 0 12px 30px rgb(9 90 43 / 0.23);
   --cream-text-shadow: 0 1px 0 rgb(15 15 15 / 0.16);
-  --heading-text-shadow: 0 1px 0 rgb(236 233 216 / 0.24);
+  --heading-text-shadow: 0 2px 0 rgb(15 15 15 / 0.18);
 }
 
 body {
