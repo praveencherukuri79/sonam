@@ -160,17 +160,16 @@
   }
 
   /**
-  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
-  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  * Default typography styles for HTML elements. These are in @layer base,
+  * so Tailwind utility classes automatically override them.
   */
 
   html {
     font-size: var(--font-size);
-    scroll-behavior: smooth;
   }
 
   body {
-    font-family: 'Manrope', sans-serif;
+   font-family: var(--site-font-family);
     color: var(--brand-ink);
     background:
       radial-gradient(circle at top left, color-mix(in srgb, var(--brand-mint) 12%, transparent), transparent 30rem),
@@ -182,27 +181,27 @@
   }
 
   h1 {
-    font-family: 'Fraunces', serif;
+    font-family: var(--site-font-family);
     font-size: var(--text-2xl);
-    font-weight: 750;
+    font-weight: 800;
     line-height: 1.05;
-    letter-spacing: -0.04em;
+    letter-spacing: 0;
   }
 
   h2 {
-    font-family: 'Fraunces', serif;
+    font-family: var(--site-font-family);
     font-size: var(--text-xl);
-    font-weight: 650;
+    font-weight: 800;
     line-height: 1.1;
-    letter-spacing: -0.035em;
+    letter-spacing: 0;
   }
 
   h3 {
-    font-family: 'Fraunces', serif;
+    font-family: var(--site-font-family);
     font-size: var(--text-lg);
-    font-weight: 650;
+    font-weight: 800;
     line-height: 1.2;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
   }
 
   h4 {
@@ -224,6 +223,14 @@
   }
 
   input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+
+  textarea,
+  select {
+    font-family: inherit;
     font-size: var(--text-base);
     font-weight: var(--font-weight-normal);
     line-height: 1.5;

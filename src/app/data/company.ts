@@ -58,29 +58,29 @@ export const company = {
   brandDisplayName,
   companionBrandName,
   manufacturer,
-  productLine: 'Sounf Mixture & Mukhwas',
-  tagline: 'The art of Instant Freshness',
+  productLine: 'Sounf Mixture and Mukhwas',
+  tagline: 'The art of instant freshness',
   email: 'krishnsaiindustries@gmail.com',
   location: 'Hyderabad - 37, Telangana, India',
   region: 'Hyderabad, Telangana',
   marketFocus: 'Retail, wholesale, HoReCa, e-commerce, and export-oriented saunf products',
   heroSummary:
-    `${brandDisplayName} by ${manufacturer} presents everyday saunf freshness in recognizable packs made for counters, shelves, and repeat purchase.`,
+    `${brandDisplayName} presents everyday saunf freshness in recognizable packs made for counters, shelves, and repeat purchase.`,
   complianceSummary:
     'The business is positioned around hygienic handling, food-grade storage, labeling discipline, and FSSAI-aligned manufacturing practices.',
   assets: {
     headerLogo: {
-      src: '/brand/navbar_logo.png',
-      alt: `${brandDisplayName} logo`,
+      src: '/img/client/sonam_logo.png',
+      alt: `${brandDisplayName} Sounf Mixture and Mukhwas logo`,
     },
     footerLogo: {
-      src: '/brand/04_sonam_main_logo.png',
-      alt: `${brandDisplayName} logo`,
+      src: '/img/client/krish_and_sai_logo.png',
+      alt: `${manufacturer} logo`,
     },
     favicon: '/brand/06_sonam_favicon.png',
     heroPack: {
-      src: '/brand/01_sonam_mukhwas.png',
-      alt: `${brandDisplayName} Mukhwas pack`,
+      src: '/brand/02_sonam_sounf_mixture.png',
+      alt: `${brandDisplayName} Sounf Mixture pack`,
     },
     aboutPack: {
       src: '/brand/02_sonam_sounf_mixture.png',
@@ -101,7 +101,7 @@ export const company = {
     homeRangeSummary:
       `The current range highlights the ${brandDisplayName} core packs and the ${companionBrandName} value pack, each presented with product details for retailers, distributors, and trade enquiries.`,
     homeHeroPackEyebrow: 'Featured pack',
-    homeHeroPackTitle: `${brandDisplayName} Mukhwas`,
+    homeHeroPackTitle: `${brandDisplayName} Sounf Mixture`,
     homeCompanyProfile:
       `${manufacturer} develops ${brandDisplayName} and ${companionBrandName} as trade-ready mouth freshener packs with cleaner presentation, dependable handling, and everyday retail appeal.`,
     homeContactPrompt:
@@ -129,6 +129,12 @@ export const company = {
       value: 'Trade Ready',
       label: 'Suitable for retail, wholesale, and hospitality channels',
     },
+  ],
+  motto: [
+    'Pure natural sounf',
+    'No compromise on quality',
+    'Provide good service',
+    'On-time delivery',
   ],
   strengths: [
     `Focused brand identity built around ${brandDisplayName} and ${companionBrandName} retail packs`,

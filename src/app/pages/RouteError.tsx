@@ -20,7 +20,7 @@ export default function RouteError() {
     : 'Something Went Wrong';
 
   return (
-    <div className="flex min-h-[70vh] items-center justify-center bg-brand-page px-6">
+    <div className="flex min-h-[70vh] items-center justify-center px-6">
       <div className="surface-card w-full max-w-2xl p-6 text-center sm:p-8 lg:p-12">
         <p className="section-eyebrow">Unexpected Issue</p>
         <h1 className="mb-5 text-3xl leading-tight text-brand-ink sm:text-4xl lg:text-6xl">{title}</h1>

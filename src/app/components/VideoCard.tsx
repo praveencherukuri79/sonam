@@ -231,7 +231,7 @@ export function VideoCard({ caption, image, videoUrl }: VideoCardProps) {
       )}
       {hasVideo && isBuffering && !hasError && (
         <div className="pointer-events-none absolute inset-0 z-30 flex items-center justify-center bg-brand-video-scrim/20">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/90 text-brand-green shadow-xl">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-cream text-brand-green shadow-xl">
             <Loader2 className="animate-spin" size={24} />
           </div>
         </div>
@@ -249,7 +249,7 @@ export function VideoCard({ caption, image, videoUrl }: VideoCardProps) {
             <button
               type="button"
               aria-label={isPlaying ? `Pause ${caption}` : `Play ${caption}`}
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/90 text-brand-ink shadow-lg transition hover:bg-white"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-cream text-brand-ink shadow-lg transition hover:bg-brand-accent-soft"
               onClick={(event) => {
                 event.stopPropagation();
                 handleTogglePlayback();
@@ -271,7 +271,7 @@ export function VideoCard({ caption, image, videoUrl }: VideoCardProps) {
             <button
               type="button"
               aria-label={isMuted ? `Unmute ${caption}` : `Mute ${caption}`}
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/90 text-brand-ink shadow-lg transition hover:bg-white"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-cream text-brand-ink shadow-lg transition hover:bg-brand-accent-soft"
               onClick={handleToggleMute}
             >
               {isMuted ? <VolumeX size={17} /> : <Volume2 size={17} />}
@@ -284,15 +284,15 @@ export function VideoCard({ caption, image, videoUrl }: VideoCardProps) {
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-brand-ink/5 via-brand-ink/10 to-brand-ink/75"></div>
           <div className="pointer-events-none absolute inset-x-0 bottom-0 p-4 sm:p-5">
             {hasVideo ? (
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-white/40 bg-white/90 shadow-xl transition-transform group-hover:scale-110">
+              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-brand-cream/50 bg-brand-cream shadow-xl transition-transform group-hover:scale-110">
                 <Play size={24} className="ml-1 text-brand-green" fill="currentColor" />
               </div>
             ) : (
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-white/40 bg-white/90 shadow-xl transition-transform group-hover:scale-110">
+              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-brand-cream/50 bg-brand-cream shadow-xl transition-transform group-hover:scale-110">
                 <Play size={24} className="ml-1 text-brand-green" fill="currentColor" />
               </div>
             )}
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-white">{caption}</p>
+            <p className="inline-flex rounded-full bg-brand-video-scrim px-3 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-brand-cream sm:text-sm">{caption}</p>
           </div>
         </>
       )}

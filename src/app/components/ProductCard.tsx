@@ -26,7 +26,7 @@ export function ProductCard({ id, name, description, flavors, isLaunched, image 
             className="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-[1.03]"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/35 via-transparent to-white/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/35 via-transparent to-brand-cream/10"></div>
         <LaunchBadge isLaunched={isLaunched} className="absolute left-3 top-3" />
       </div>
       <div className="flex flex-1 flex-col p-4 sm:p-5">

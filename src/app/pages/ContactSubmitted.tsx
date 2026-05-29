@@ -22,7 +22,7 @@ export function ContactSubmitted() {
       </section>
 
       <section className="px-4 pb-14 sm:px-6 sm:pb-16 lg:px-12 lg:pb-24">
-        <div className="mx-auto max-w-3xl rounded-[24px] border border-brand-green/10 bg-white p-5 shadow-brand-panel sm:rounded-[32px] sm:p-8 lg:p-10">
+        <div className="mx-auto max-w-3xl rounded-[24px] border border-brand-green/10 bg-brand-cream p-5 shadow-brand-panel sm:rounded-[32px] sm:p-8 lg:p-10">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
             <div className="mx-auto w-fit rounded-full bg-brand-green/10 p-3 text-brand-green sm:mx-0">
               <CheckCircle2 size={22} />

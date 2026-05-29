@@ -1,0 +1,222 @@
+:root {
+  --bg-green: #14752F;
+  --heading: #0B0B0B;
+  --body: #F3EEDC;
+  --body-readable: #F2E9D2;
+  --muted: #D4CCB8;
+  --muted-foreground: #31412F;
+  --card-bg: #E7E1CC;
+  --pill-text: #245C24;
+  --pill-bg: #D7E5C1;
+  --background: var(--bg-green);
+  --secondary: var(--pill-bg);
+  --accent: #F5F1E8;
+  --brand-green: var(--pill-text);
+  --brand-green-hover: #174A17;
+  --brand-mint: var(--pill-bg);
+  --brand-gold: var(--pill-text);
+  --brand-warning: var(--pill-text);
+  --brand-cream: var(--body-readable);
+  --brand-page: var(--bg-green);
+  --brand-accent-soft: var(--pill-bg);
+  --brand-body: #31412F;
+  --warm-surface: var(--card-bg);
+  --warm-surface-strong: #F5F1E8;
+  --warm-surface-muted: #DCCFAF;
+  --green-surface: var(--pill-bg);
+  --green-surface-soft: #E8EFD7;
+  --green-surface-strong: #C7DDB0;
+  --poster-green: var(--bg-green);
+  --poster-green-deep: #0E6428;
+  --poster-green-soft: #288D42;
+  --surface-border: rgb(36 92 36 / 0.12);
+  --surface-border-soft: rgb(36 92 36 / 0.08);
+  --surface-border-strong: rgb(36 92 36 / 0.24);
+  --surface-shadow: 0 10px 24px rgb(0 0 0 / 0.08), 0 2px 6px rgb(0 0 0 / 0.04);
+  --panel-shadow: 0 18px 50px rgb(24 34 24 / 0.08);
+  --product-shadow: 0 18px 42px rgb(24 34 24 / 0.1);
+  --button-shadow: 0 12px 30px rgb(9 90 43 / 0.23);
+  --cream-text-shadow: 0 1px 0 rgb(15 15 15 / 0.16);
+  --heading-text-shadow: 0 1px 0 rgb(236 233 216 / 0.24);
+}
+
+body {
+  background: var(--bg-green);
+}
+
+.page-shell {
+  background: transparent;
+}
+
+.brand-page-background {
+  background-color: var(--bg-green);
+  background-image:
+    radial-gradient(circle at 16% 9rem, rgb(40 141 66 / 0.2) 0 16rem, transparent 34rem),
+    radial-gradient(circle at 82% 18rem, rgb(14 100 40 / 0.2) 0 18rem, transparent 40rem),
+    linear-gradient(180deg, #1F8039 0%, var(--bg-green) 34%, #126E2D 72%, #0E6428 100%);
+  background-attachment: fixed;
+}
+
+.brand-bg-poster-green,
+.brand-bg-pale-yellow {
+  background-color: var(--bg-green);
+}
+
+.brand-landing-background {
+  background: transparent;
+}
+
+.surface-card,
+.surface-card-sm,
+.green-yellow-soft-card {
+  background: var(--card-bg);
+  border-color: var(--surface-border);
+  box-shadow: var(--surface-shadow);
+}
+
+.green-yellow-hero-copy,
+.green-yellow-hero-card,
+.product-detail-copy-panel,
+.green-yellow-page-hero {
+  background: var(--card-bg);
+  border: 1px solid var(--surface-border-soft);
+}
+
+.green-yellow-hero-copy {
+  box-shadow: 0 16px 42px rgb(24 34 24 / 0.09);
+}
+
+.cta-primary {
+  background: var(--brand-green);
+  color: var(--brand-cream);
+  box-shadow: var(--button-shadow);
+}
+
+.cta-primary:hover {
+  background: var(--brand-green-hover);
+  color: var(--brand-cream);
+}
+
+.cta-outline {
+  background: var(--pill-bg);
+  border: 2px solid rgb(36 92 36 / 0.32);
+  color: var(--pill-text);
+  box-shadow: none;
+}
+
+.cta-dark {
+  background: var(--brand-green);
+  color: var(--brand-cream);
+  box-shadow: var(--button-shadow);
+}
+
+.cta-dark:hover {
+  background: var(--brand-green-hover);
+  color: var(--brand-cream);
+}
+
+.cta-outline:hover {
+  background: var(--green-surface-soft);
+  border-color: var(--pill-text);
+  color: var(--brand-green-hover);
+}
+
+.section-eyebrow {
+  color: var(--pill-text);
+}
+
+.flavor-chip {
+  background: var(--pill-bg);
+  border-color: var(--surface-border-strong);
+  color: var(--pill-text);
+}
+
+.product-detail-copy-panel {
+  border-radius: 32px;
+  box-shadow: var(--panel-shadow);
+}
+
+.product-image-well {
+  background: var(--warm-surface-muted);
+  border: 1px solid var(--surface-border);
+  border-radius: 20px;
+}
+
+.marketing-input {
+  background: var(--warm-surface-strong);
+  border-color: var(--surface-border-strong);
+}
+
+.green-yellow-hero-card {
+  box-shadow: var(--panel-shadow);
+}
+
+.hero-product-panel {
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--warm-surface-muted);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--product-shadow);
+}
+
+.green-yellow-product-frame {
+  background: var(--warm-surface-muted);
+  border: 10px solid rgb(245 241 232 / 0.96);
+}
+
+.green-yellow-highlight-card {
+  background: var(--warm-surface-strong);
+  border: 1px solid var(--surface-border);
+}
+
+.green-yellow-section-band {
+  background: transparent;
+  border-block: 1px solid var(--surface-border-soft);
+}
+
+.green-yellow-panel {
+  background: var(--warm-surface-muted);
+  border: 1px solid var(--surface-border);
+}
+
+.green-page-section {
+  background: transparent;
+}
+
+.pale-page-section {
+  background: transparent;
+}
+
+.green-yellow-page-hero {
+  box-shadow: var(--panel-shadow);
+}
+
+.on-green-eyebrow {
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 999px;
+  background: var(--pill-bg);
+  padding: 0.45rem 0.8rem;
+  color: var(--pill-text);
+  text-shadow: none;
+}
+
+.on-green-copy {
+  color: var(--body-readable);
+  line-height: 1.8;
+  text-shadow: var(--cream-text-shadow);
+}
+
+.on-green-heading {
+  color: var(--heading);
+  text-shadow: var(--heading-text-shadow);
+}
+
+.on-green-link {
+  color: var(--body-readable);
+  text-shadow: var(--cream-text-shadow);
+}
+
+.on-green-link:hover {
+  color: var(--brand-cream);
+}

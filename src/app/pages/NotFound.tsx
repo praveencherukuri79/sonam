@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 export function NotFound() {
   return (
-    <div className="flex min-h-[70vh] items-center justify-center bg-brand-page px-6">
+    <div className="flex min-h-[70vh] items-center justify-center px-6">
       <div className="surface-card w-full max-w-2xl p-6 text-center sm:p-8 lg:p-12">
         <p className="section-eyebrow">Page Missing</p>
         <h1 className="mb-5 text-7xl text-brand-ink sm:text-8xl lg:mb-8 lg:text-[10rem]">404</h1>

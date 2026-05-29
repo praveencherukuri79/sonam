@@ -6,7 +6,7 @@ import { company } from '../data/company';
 
 /** Keep tab titles short so the browser doesn’t truncate (e.g. “Sonam Sounf…”). */
 const pageTitles: Record<string, string> = {
-  '/': `${company.brandDisplayName} · Sounf & Mukhwas`,
+  '/': `${company.brandDisplayName} · Sounf Mixture and Mukhwas`,
   '/products': `Products · ${company.brandDisplayName}`,
   '/about': `About · ${company.brandDisplayName}`,
   '/videos': `Gallery · ${company.brandDisplayName}`,
@@ -31,7 +31,7 @@ export function Layout() {
   }, [hash, pathname]);
 
   return (
-    <div className="flex min-h-screen flex-col bg-brand-page">
+    <div className="brand-page-background brand-bg-poster-green flex min-h-screen flex-col">
       <a
         href="#main-content"
         className="sr-only z-[60] rounded-full bg-brand-ink px-4 py-3 text-sm font-bold text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4"

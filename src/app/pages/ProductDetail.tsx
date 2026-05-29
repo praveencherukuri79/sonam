@@ -95,33 +95,32 @@ export function ProductDetail() {
   const primaryFlavor = product.flavors[0] ?? 'Signature';
 
   return (
-    <div className="overflow-hidden bg-brand-page">
+    <div className="overflow-hidden">
       <section className="relative px-4 py-6 sm:px-6 sm:py-10 lg:px-12 lg:py-16">
         <div className="absolute left-[-8rem] top-20 h-72 w-72 rounded-full bg-brand-mint/18 blur-3xl"></div>
-        <div className="absolute right-[-8rem] top-40 h-80 w-80 rounded-full bg-brand-saffron/18 blur-3xl"></div>
+        <div className="absolute right-[-8rem] top-40 h-80 w-80 rounded-full bg-brand-green-hover/12 blur-3xl"></div>
 
         <div className="relative mx-auto lg:hidden">
           <BackToProductsButton
             onClick={() => navigate('/products')}
-            className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full border border-brand-green/15 bg-white text-brand-ink shadow-sm transition hover:border-brand-green hover:text-brand-green"
+            className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full border border-brand-green/15 bg-brand-cream text-brand-ink shadow-sm transition hover:border-brand-green hover:text-brand-green"
             iconSize={14}
           />
 
           <div className="surface-card overflow-hidden rounded-[24px] p-4">
-            <div className="rounded-[22px] bg-gradient-to-br from-brand-accent-soft via-white to-brand-accent-soft/70 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]">
-              <div className="relative overflow-hidden rounded-[18px] bg-white/65 px-4 py-6">
-                <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-brand-saffron/18 to-transparent"></div>
+            <div className="product-image-well px-4 py-4">
+              <div className="relative overflow-hidden px-3 py-3">
                 <ImageWithFallback
                   src={product.image}
                   alt={product.name}
-                  className="relative z-10 mx-auto h-52 w-full object-contain"
+                  className="relative z-10 mx-auto h-40 w-full object-contain sm:h-48"
                 />
               </div>
             </div>
 
             <div className="mt-5 flex flex-wrap items-center gap-3">
               <LaunchBadge isLaunched={product.isLaunched} className="px-4 py-2 text-xs tracking-[0.18em]" />
-              <span className="rounded-full border border-brand-gold/25 bg-white px-4 py-2 text-xs font-extrabold uppercase tracking-[0.18em] text-brand-warning">
+              <span className="rounded-full border border-brand-gold/25 bg-brand-cream px-4 py-2 text-xs font-extrabold uppercase tracking-[0.18em] text-brand-warning">
                 {product.weight}
               </span>
             </div>
@@ -136,33 +135,33 @@ export function ProductDetail() {
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-3">
-              <div className="rounded-[18px] border border-brand-green/10 bg-brand-page px-4 py-4">
+              <div className="rounded-[18px] border border-brand-green/10 bg-brand-cream px-4 py-4">
                 <p className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-brand-gold">Pack Type</p>
                 <p className="mt-2 text-lg font-semibold leading-7 text-brand-ink">{product.weight}</p>
               </div>
-              <div className="rounded-[18px] border border-brand-green/10 bg-brand-page px-4 py-4">
+              <div className="rounded-[18px] border border-brand-green/10 bg-brand-cream px-4 py-4">
                 <p className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-brand-gold">Taste Note</p>
                 <p className="mt-2 text-lg font-semibold leading-7 text-brand-ink">{primaryFlavor}</p>
               </div>
             </div>
 
-            <ProductProfileCard className="mt-6 rounded-[18px] border border-brand-green/10 bg-brand-page px-5 py-5" />
+            <ProductProfileCard className="mt-6 rounded-[18px] border border-brand-green/10 bg-brand-cream px-5 py-5" />
 
             <ProductActionButtons className="mt-6 flex flex-col gap-3" />
           </div>
         </div>
 
-        <div className="relative mx-auto hidden max-w-7xl gap-8 lg:grid lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-          <div className="order-2 lg:order-1">
+        <div className="relative mx-auto hidden max-w-7xl items-stretch gap-8 lg:grid lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="product-detail-copy-panel order-2 flex h-full flex-col justify-center p-6 lg:order-1 lg:p-8 xl:p-10">
             <BackToProductsButton
               onClick={() => navigate('/products')}
-              className="mb-6 inline-flex h-11 w-11 items-center justify-center rounded-full border border-brand-green/15 bg-white text-brand-ink shadow-sm transition hover:border-brand-green hover:text-brand-green"
+              className="mb-6 inline-flex h-11 w-11 items-center justify-center rounded-full border border-brand-green/15 bg-brand-cream text-brand-ink shadow-sm transition hover:border-brand-green hover:text-brand-green"
               iconSize={19}
             />
 
             <div className="mb-5 flex flex-wrap items-center gap-3">
               <LaunchBadge isLaunched={product.isLaunched} className="px-4 py-2 text-xs tracking-[0.18em]" />
-              <span className="rounded-full border border-brand-gold/25 bg-white px-4 py-2 text-xs font-extrabold uppercase tracking-[0.18em] text-brand-warning">
+              <span className="rounded-full border border-brand-green/20 bg-brand-cream px-4 py-2 text-xs font-extrabold uppercase tracking-[0.18em] text-brand-green">
                 {product.weight} showcase pack
               </span>
             </div>
@@ -178,15 +177,17 @@ export function ProductDetail() {
               ))}
             </div>
 
+            <ProductProfileCard className="mt-7 rounded-[18px] border border-brand-green/10 bg-brand-cream px-5 py-5" />
+
             <ProductActionButtons className="mt-9 flex flex-col gap-3 sm:flex-row" />
           </div>
 
-          <div className="order-1 lg:order-2">
-            <div className="space-y-4 sm:space-y-5">
-              <div className="shadow-brand-hero relative rounded-[32px] border border-white bg-white p-3 sm:rounded-[36px]">
-                <div className="relative aspect-[5/4] overflow-hidden rounded-[24px] bg-brand-accent-soft sm:aspect-[4/3] sm:rounded-[28px] lg:aspect-[4/5]">
+          <div className="order-1 h-full lg:order-2">
+            <div className="h-full">
+              <div className="shadow-brand-hero relative flex h-full min-h-[34rem] rounded-[32px] border border-brand-cream bg-brand-cream p-3 sm:rounded-[36px]">
+                <div className="relative min-h-full flex-1 overflow-hidden rounded-[24px] bg-brand-accent-soft sm:rounded-[28px]">
                   <div className="absolute inset-0 flex items-center justify-center p-5 sm:p-7">
-                    <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white/55 to-transparent"></div>
+                    <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-brand-cream/55 to-transparent"></div>
                     <ImageWithFallback
                       src={product.image}
                       alt={product.name}
@@ -195,8 +196,6 @@ export function ProductDetail() {
                   </div>
                 </div>
               </div>
-
-              <ProductProfileCard className="surface-card-sm p-5 sm:p-6" />
             </div>
           </div>
         </div>
@@ -228,12 +227,12 @@ export function ProductDetail() {
 
       <section className="px-4 py-10 sm:px-6 lg:px-12 lg:py-16">
         <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-2">
-          <div className="shadow-brand-dark-section rounded-[32px] bg-brand-ink p-6 text-white lg:p-8">
-            <h2 className="mb-6 text-4xl">Ingredients</h2>
+          <div className="green-yellow-panel rounded-[32px] p-6 lg:p-8">
+            <h2 className="section-title mb-6">Ingredients</h2>
             <ul className="space-y-4">
               {product.ingredients.map((ingredient) => (
-                <li key={ingredient} className="flex gap-3 text-white/75">
-                  <CheckCircle2 className="mt-1 shrink-0 text-brand-mint" size={18} />
+                <li key={ingredient} className="flex gap-3 text-brand-body">
+                  <CheckCircle2 className="mt-1 shrink-0 text-brand-green" size={18} />
                   <span>{ingredient}</span>
                 </li>
               ))}
@@ -259,10 +258,10 @@ export function ProductDetail() {
           <div className="mx-auto max-w-7xl">
             <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="section-eyebrow">More Products</p>
-                <h2 className="section-title">Explore the rest of the range</h2>
+                <p className="section-eyebrow on-green-eyebrow">More Products</p>
+                <h2 className="section-title on-green-heading">Explore the rest of the range</h2>
               </div>
-              <Link to="/products" className="text-sm font-extrabold uppercase tracking-[0.16em] text-brand-green">
+              <Link to="/products" className="on-green-link text-sm font-extrabold uppercase tracking-[0.16em]">
                 View all products
               </Link>
             </div>

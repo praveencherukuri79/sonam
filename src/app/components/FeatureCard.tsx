@@ -9,7 +9,7 @@ interface FeatureCardProps {
 
 export function FeatureCard({ icon: Icon, title, description }: FeatureCardProps) {
   return (
-    <article className="surface-card-sm brand-card-hover p-6">
+    <article className="surface-card-sm brand-card-hover h-full p-6">
       <div className="brand-soft-gradient mb-5 flex h-14 w-14 items-center justify-center rounded-2xl">
         <Icon size={28} className="text-brand-green" />
       </div>

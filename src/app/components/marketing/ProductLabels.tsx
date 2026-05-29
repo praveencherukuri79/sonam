@@ -12,7 +12,7 @@ interface FlavorChipProps {
 
 export function LaunchBadge({ isLaunched, className = '' }: LaunchBadgeProps) {
   return (
-    <span className={`launch-badge ${isLaunched ? 'bg-brand-green text-white' : 'bg-white/95 text-brand-warning'} ${className}`}>
+    <span className={`launch-badge ${isLaunched ? 'bg-brand-green text-brand-cream' : 'bg-brand-cream text-brand-warning'} ${className}`}>
       {isLaunched ? 'Launched' : 'Coming Soon'}
     </span>
   );

@@ -100,7 +100,7 @@ export function Contact() {
             </Form>
           </div>
 
-          <div className="shadow-brand-dark-panel rounded-[24px] bg-brand-ink p-6 text-white sm:rounded-[32px] lg:p-8">
+          <div className="green-yellow-panel rounded-[24px] p-6 sm:rounded-[32px] lg:p-8">
             <MarketingButton
               href={`mailto:${company.email}`}
               className="mb-8 px-6"
@@ -110,28 +110,28 @@ export function Contact() {
             </MarketingButton>
             <div className="space-y-8">
               <div>
-                <h3 className="mb-3 flex items-center gap-2 font-['Manrope'] text-xs font-extrabold uppercase tracking-[0.22em] text-brand-gold"><Mail size={16} /> Contact Details</h3>
-                <div className="space-y-3 text-white/70">
+                <h3 className="mb-3 flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.22em] text-brand-green"><Mail size={16} /> Contact Details</h3>
+                <div className="space-y-3 text-brand-body">
                   {contactChannels.map((channel) => (
                     <p key={channel.label}>
-                      <span className="font-bold text-white">{channel.label}:</span>{' '}
-                      {'href' in channel && channel.href ? <a href={channel.href} className="hover:text-white">{channel.value}</a> : channel.value}
+                      <span className="font-bold text-brand-ink">{channel.label}:</span>{' '}
+                      {'href' in channel && channel.href ? <a href={channel.href} className="hover:text-brand-green">{channel.value}</a> : channel.value}
                     </p>
                   ))}
                 </div>
               </div>
 
               <div>
-                <h3 className="mb-3 flex items-center gap-2 font-['Manrope'] text-xs font-extrabold uppercase tracking-[0.22em] text-brand-gold"><MapPin size={16} /> Address Note</h3>
-                <p className="leading-relaxed text-white/70">
+                <h3 className="mb-3 flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.22em] text-brand-green"><MapPin size={16} /> Address Note</h3>
+                <p className="leading-relaxed text-brand-body">
                   {company.manufacturer}<br />
                   {company.location}
                 </p>
               </div>
 
               <div>
-                <h3 className="mb-3 flex items-center gap-2 font-['Manrope'] text-xs font-extrabold uppercase tracking-[0.22em] text-brand-gold"><ShieldCheck size={16} /> Enquiry Types</h3>
-                <div className="space-y-2 text-white/70">
+                <h3 className="mb-3 flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.22em] text-brand-green"><ShieldCheck size={16} /> Enquiry Types</h3>
+                <div className="space-y-2 text-brand-body">
                   <p>Retail placement and distributor onboarding</p>
                   <p>Bulk supply and HoReCa requirements</p>
                   <p>Brand and export-related business communication</p>
