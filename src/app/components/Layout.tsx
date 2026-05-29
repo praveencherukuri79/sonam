@@ -11,6 +11,7 @@ const pageTitles: Record<string, string> = {
   '/about': `About · ${company.brandDisplayName}`,
   '/videos': `Gallery · ${company.brandDisplayName}`,
   '/contact': `Contact · ${company.brandDisplayName}`,
+  '/contact/submitted': `Enquiry Sent · ${company.brandDisplayName}`,
 };
 
 export function Layout() {
@@ -27,7 +28,7 @@ export function Layout() {
 
     document.title =
       pageTitles[pathname] ??
-      (pathname.startsWith('/products/') ? `Product · ${company.brandDisplayName}` : `${company.brandDisplayName} · Mukhwas`);
+      (pathname.startsWith('/products/') ? `Product · ${company.brandDisplayName}` : `Page Not Found · ${company.brandDisplayName}`);
   }, [hash, pathname]);
 
   return (

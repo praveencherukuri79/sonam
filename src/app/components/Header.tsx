@@ -38,7 +38,7 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-brand-green/20 bg-brand-accent-soft/92 backdrop-blur-2xl">
+      <header className="brand-header fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl">
         <div className="px-4 sm:px-6 lg:px-12">
           <div className="mx-auto flex h-16 max-w-7xl items-center justify-between lg:h-20">
             <Link
@@ -54,7 +54,7 @@ export function Header() {
               />
             </Link>
 
-            <nav className="hidden items-center gap-2 rounded-full border border-brand-green/15 bg-brand-cream/90 p-1.5 shadow-sm md:flex">
+            <nav className="brand-nav-shell hidden items-center gap-2 rounded-full p-1.5 md:flex">
               {navItems.map((item) => (
                 <NavLink
                   key={item.to}
@@ -62,8 +62,8 @@ export function Header() {
                   className={({ isActive }) =>
                     `rounded-full px-4 py-2.5 text-sm font-bold transition ${
                       isActive
-                        ? 'bg-brand-green text-brand-cream shadow-md shadow-brand-green/20'
-                        : 'text-brand-nav-muted hover:bg-brand-accent-soft hover:text-brand-green'
+                        ? 'brand-nav-link-active'
+                        : 'brand-nav-link'
                     }`
                   }
                 >
@@ -75,7 +75,7 @@ export function Header() {
             <button
               ref={menuButtonRef}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="rounded-full border border-brand-green/15 bg-brand-cream p-3 text-brand-ink shadow-sm md:hidden"
+              className="brand-mobile-menu-button rounded-full p-3 shadow-sm md:hidden"
               aria-controls="mobile-navigation"
               aria-expanded={isMenuOpen}
               aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
@@ -92,7 +92,7 @@ export function Header() {
             ref={mobileNavRef}
             id="mobile-navigation"
             aria-label="Mobile navigation"
-            className="absolute left-4 right-4 top-20 rounded-[22px] border border-brand-green/10 bg-brand-cream p-4 shadow-2xl shadow-brand-ink/15 sm:rounded-[28px]"
+            className="brand-mobile-nav absolute left-4 right-4 top-20 rounded-[22px] p-4 sm:rounded-[28px]"
             onClick={(event) => event.stopPropagation()}
           >
             {navItems.map((item) => (
@@ -102,7 +102,7 @@ export function Header() {
                 onClick={() => setIsMenuOpen(false)}
                 className={({ isActive }) =>
                   `block rounded-2xl px-4 py-4 text-base font-bold ${
-                    isActive ? 'bg-brand-green text-brand-cream' : 'text-brand-ink hover:bg-brand-accent-soft hover:text-brand-green'
+                    isActive ? 'brand-nav-link-active' : 'brand-nav-link'
                   }`
                 }
               >

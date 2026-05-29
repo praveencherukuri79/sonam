@@ -97,9 +97,6 @@ export function ProductDetail() {
   return (
     <div className="overflow-hidden">
       <section className="relative px-4 py-6 sm:px-6 sm:py-10 lg:px-12 lg:py-16">
-        <div className="absolute left-[-8rem] top-20 h-72 w-72 rounded-full bg-brand-mint/18 blur-3xl"></div>
-        <div className="absolute right-[-8rem] top-40 h-80 w-80 rounded-full bg-brand-green-hover/12 blur-3xl"></div>
-
         <div className="relative mx-auto lg:hidden">
           <BackToProductsButton
             onClick={() => navigate('/products')}

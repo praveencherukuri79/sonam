@@ -1,4 +1,4 @@
-import { demoVideoBySlot } from './playableVideoSources';
+import { galleryVideoBySlot } from './playableVideoSources';
 
 export interface BrandFeature {
   title: string;
@@ -20,17 +20,17 @@ const homeGallery: BrandMediaItem[] = [
   {
     caption: 'Sonam Mukhwas',
     image: '/brand/01_sonam_mukhwas.png',
-    videoUrl: [...demoVideoBySlot[0]],
+    videoUrl: [...galleryVideoBySlot[0]],
   },
   {
     caption: 'Sonam Sounf Mixture',
     image: '/brand/02_sonam_sounf_mixture.png',
-    videoUrl: [...demoVideoBySlot[1]],
+    videoUrl: [...galleryVideoBySlot[1]],
   },
   {
     caption: 'Pony Mouth Freshner',
     image: '/brand/03_pony_mouth_freshener.png',
-    videoUrl: [...demoVideoBySlot[2]],
+    videoUrl: [...galleryVideoBySlot[2]],
   },
 ];
 
@@ -39,17 +39,17 @@ const videosGallery: BrandMediaItem[] = [
   {
     caption: 'Shelf-ready branding',
     image: '/brand/01_sonam_mukhwas.png',
-    videoUrl: [...demoVideoBySlot[3]],
+    videoUrl: [...galleryVideoBySlot[3]],
   },
   {
     caption: 'Core sounf mixture line',
     image: '/brand/02_sonam_sounf_mixture.png',
-    videoUrl: [...demoVideoBySlot[4]],
+    videoUrl: [...galleryVideoBySlot[4]],
   },
   {
     caption: 'Pony value range',
     image: '/brand/03_pony_mouth_freshener.png',
-    videoUrl: [...demoVideoBySlot[5]],
+    videoUrl: [...galleryVideoBySlot[5]],
   },
 ];
 
@@ -110,7 +110,7 @@ export const company = {
     productsPageDescription:
       `A focused retail range covering ${brandDisplayName} Mukhwas, ${brandDisplayName} Sounf Mixture, and ${companionBrandName} Mouth Freshner.`,
     videosPageDescription:
-      `Pack art from the ${brandDisplayName} and ${companionBrandName} range. Every tile uses the same Pexels stock clip as a placeholder until you drop your own MP4s in public/videos.`,
+      `Pack visuals and brand creatives from the ${brandDisplayName} and ${companionBrandName} range for trade, retail, and distribution discussions.`,
     videosCtaDescription:
       `For higher-resolution assets, distributor discussions, or product details about the ${brandDisplayName} range.`,
     contactPageDescription:

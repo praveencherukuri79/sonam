@@ -78,6 +78,44 @@ body {
   background-color: var(--bg-green);
 }
 
+.brand-header {
+  background: rgb(215 229 193 / 0.94);
+  border-bottom: 1px solid var(--surface-border-strong);
+}
+
+.brand-nav-shell {
+  background: var(--card-bg);
+  border: 1px solid var(--surface-border-strong);
+  box-shadow: var(--surface-shadow);
+}
+
+.brand-nav-link {
+  color: var(--brand-body);
+}
+
+.brand-nav-link:hover {
+  background: var(--pill-bg);
+  color: var(--brand-green-hover);
+}
+
+.brand-nav-link-active {
+  background: var(--brand-green);
+  color: var(--brand-cream);
+  box-shadow: 0 8px 18px rgb(36 92 36 / 0.2);
+}
+
+.brand-mobile-menu-button {
+  background: var(--card-bg);
+  border: 1px solid var(--surface-border-strong);
+  color: var(--brand-ink);
+}
+
+.brand-mobile-nav {
+  background: var(--card-bg);
+  border: 1px solid var(--surface-border-strong);
+  box-shadow: var(--panel-shadow);
+}
+
 .brand-landing-background {
   background: transparent;
 }
