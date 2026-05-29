@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, Factory, Mail, MapPin, ShieldCheck, Sparkles, Store } from 'lucide-react';
-import { Form, useNavigation } from 'react-router';
+import { Form, Link, useNavigation } from 'react-router';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { ProductGrid } from '../components/ProductGrid';
 import { FeatureCard } from '../components/FeatureCard';
@@ -247,7 +247,13 @@ export function Home() {
               <p className="section-eyebrow on-green-eyebrow">Gallery</p>
               <h2 className="on-green-heading text-4xl lg:text-6xl">Brand creatives and pack visuals</h2>
             </div>
-            <ArrowRight className="hidden text-[#18361F] md:block" size={44} />
+            <Link
+              to="/videos"
+              aria-label="Open Gallery page"
+              className="hidden rounded-full p-2 text-brand-cream transition hover:translate-x-1 hover:text-brand-accent-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-accent-soft md:inline-flex"
+            >
+              <ArrowRight size={44} />
+            </Link>
           </div>
           <div className="grid grid-cols-1 gap-5 min-[430px]:grid-cols-3 lg:gap-7">
             {company.homeGallery.map((item) => (

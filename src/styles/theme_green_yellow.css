@@ -38,6 +38,8 @@
   --button-shadow: 0 12px 30px rgb(9 90 43 / 0.23);
   --cream-text-shadow: 0 1px 0 rgb(15 15 15 / 0.16);
   --heading-text-shadow: 0 2px 0 rgb(15 15 15 / 0.18);
+  --background-dot: rgb(215 229 193 / 0.14);
+  --background-dot-soft: rgb(242 233 210 / 0.08);
 }
 
 body {
@@ -51,9 +53,23 @@ body {
 .brand-page-background {
   background-color: var(--bg-green);
   background-image:
+    radial-gradient(circle at center, var(--background-dot) 0 2px, transparent 2.25px),
+    radial-gradient(circle at center, var(--background-dot-soft) 0 1.45px, transparent 1.7px),
     radial-gradient(circle at 16% 9rem, rgb(40 141 66 / 0.2) 0 16rem, transparent 34rem),
     radial-gradient(circle at 82% 18rem, rgb(14 100 40 / 0.2) 0 18rem, transparent 40rem),
     linear-gradient(180deg, #1F8039 0%, var(--bg-green) 34%, #126E2D 72%, #0E6428 100%);
+  background-position:
+    0 0,
+    10px 12px,
+    center,
+    center,
+    center;
+  background-size:
+    20px 20px,
+    32px 32px,
+    auto,
+    auto,
+    auto;
   background-attachment: fixed;
 }
 
